@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="title">
+        Digital Native Login
+    </div>
+
+    <div class="container">
+        <div class="child">
+            <div id="login">
+                <form name="user-login">
+                    <h1>Personal Details</h1>
+                    <p id="name">Name: <input type="text" name="namebox" placeholder="Enter your Name"></p>
+                    <p id="email">Email: <input type="text" name="emailbox" placeholder="Enter your Email"></p>
+                    <p id="card">Card: <input type="tel" name="cardbox" placeholder="Enter a Card Number" minlength="16" maxlength="16"></p>
+                    <button id="submit-details" type="button" onclick="sendPersonalDetails()">Submit</button>
+                </form>
+            </div>
+        </div>
+    <script src="./login.js">
+        sendPersonalDetails()
+    </script>
+    </div>
+
+</body>
+</html>
